@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/app.css" />
+
+  <title>Aplicación MEC AdvantEdge</title>
+</head>
+<body>
+  <header id="header" class="header-container">
+    <span class="header-arrow inactive">&lt;</span>
+    <h1 class="header-title">API REST ADVANTAGE EDGE</h1>
+    <h1 class="header-title header-title--categoryView inactive">Zona</h1>
+
+    <form id="searchForm" class="header-searchForm">
+      <input type="text" placeholder="Movistar" />
+      <button id="searchBtn">🔍</button>
+    </form>
+  </header>
+
+  <section id="trendingPreview" class="trendingPreview-container">
+    <div class="trendingPreview-header">
+      <h2 class="trendingPreview-title">Usuarios</h2>
+      <button class="trendingPreview-btn">Ver más</button>
+    </div>
+
+    <article class="trendingPreview-movieList">
+     <!--  <div class="movie-container">
+        <img
+          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+          class="movie-img"
+          alt="Nombre de la película"
+        />
+      </div>
+
+      <div class="movie-container">
+        <img
+          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+          class="movie-img"
+          alt="Nombre de la película"
+        />
+      </div>
+
+      <div class="movie-container">
+        <img
+          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+          class="movie-img"
+          alt="Nombre de la película"
+        />
+      </div> -->
+    </article>
+  </section>
+
+  <section id="categoriesPreview" class="categoriesPreview-container">
+    <h2 class="categoriesPreview-title">Zonas</h2>
+
+    <article class="categoriesPreview-list">
+     <!--  <div class="category-container">
+        <h3 id="id28" class="category-title">Romance</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id16" class="category-title">Drama</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id14" class="category-title">Acción</h3>
+      </div> -->
+    </article>
+  </section>
+
+  <section id="genericList" class="genericList-container inactive">
+    <div class="movie-container">
+      <img
+        src="https://seeklogo.com/images/M/movistar-2017-logo-E5302D14EF-seeklogo.com.png"
+        class="movie-img"
+        alt="ISP"
+      />
+      
+      <h1 class="movieDetail-title"> Ronda-Movistar</h1>
+    <span class="movieDetail-vel"> </span>
+    <p class="movieDetail-PoA">
+      Numero de puntos de acceso: 6
+    </p>
+    <p class="movieDetail-zone">
+      Numero de usuarios: 2
+    </p>
+    <p class="movieDetail-mec">
+     Numero de Acceso Inservibles: 0
+    </p>
+
+ 
+    </div>
+    
+
+  </section>
+
+  <section id="movieDetail" class="movieDetail-container inactive">
+    <h1 class="movieDetail-title">Nombre: 10.100.10 </h1>
+    <span class="movieDetail-vel"> 9/ms </span>
+    <p class="movieDetail-PoA">
+      Red movistar
+    </p>
+    <p class="movieDetail-zone">
+      Ronda-movistar
+    </p>
+    <p class="movieDetail-mec">
+      MEC
+    </p>
+    <p class="movieDetail-tipo">
+      Coche
+    </p>
+    <p class="movieDetail-position">
+      No definida
+    </p>
+
+    <!-- <article class="categories-list">
+      <div class="category-container">
+        <h3 id="id28" class="category-title">Genil-movistar</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id16" class="category-title">Centro-movistar</h3>
+      </div>
+
+      <div class="category-container">
+        <h3 id="id14" class="category-title">Ronda-movistar</h3>
+      </div>
+    </article> -->
+  </section>
+
+  <footer>API REST ADVANTAGE EDGE @ACACIO</footer>
+  
+  <!-- Añadimos los script de secrets y axios-->
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./src/secrets.js"></script>
+  <script src="./src/nodes.js"></script>
+  <script src="./src/main.js"></script>
+  <script src="./src/navigation.js"></script>
+  <script type="text/javascript">
+    function actualizar(){location.reload(true);}
+  //Función para actualizar cada 10 segundos(10000 milisegundos)
+    setInterval("actualizar()",10000);
+  </script>
+</body>
+</html>
